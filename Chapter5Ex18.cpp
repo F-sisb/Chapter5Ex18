@@ -36,7 +36,11 @@ int main()
     fstream censusdata("people-1.txt", ios::in);
      int num,figure;
 
-    
+     cout << "Praireiville Population Growth\n";
+     cout << "--------------------------------\n";
+     cout << "(Each * represents 1000 people)\n";
+     cout << "--------------------------------\n";
+
      if (censusdata >> num)
      {
          cout << "1900: ";
