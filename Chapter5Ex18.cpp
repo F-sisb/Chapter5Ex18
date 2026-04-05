@@ -34,15 +34,84 @@ using namespace std;
 int main()
 {
     fstream censusdata("people-1.txt", ios::in);
-    double num;
+     int num,figure;
 
-    if (censusdata >>num)
-    {
-        cout << num;
+    
+     if (censusdata >> num)
+     {
+         cout << "1900: ";
 
-        
-    }
+         figure = (num / 1000);
 
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+             
+
+         }
+
+         cout << "\n";
+
+         censusdata >> num;
+
+         cout << "1920: ";
+         figure = (num / 1000);
+         
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+
+
+         }
+         cout << "\n";
+         censusdata >> num;
+         cout << "1940: ";
+         figure = (num / 1000);
+
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+
+
+         }
+         cout << "\n";
+         censusdata >> num;
+         cout << "1960: ";
+         figure = (num / 1000);
+
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+
+
+         }
+         cout << "\n";
+         censusdata >> num;
+         cout << "1980: ";
+         figure = (num / 1000);
+
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+
+
+         }
+         cout << "\n";
+
+         censusdata >> num;
+         cout << "2000: ";
+         figure = (num / 1000);
+
+         for (int count = 1; count <= figure; count++)
+         {
+             cout << "*";
+
+
+         }
+         cout << "\n";
+
+     }
+    
 }
     
     
